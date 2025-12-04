@@ -1,8 +1,9 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Jupyterbook template
-author: The Copernicus Climate Change Service (C3S), entrusted to ECMWF (European Centre for Medium-Range Weather Forecasts)
+title: Online Workshop on Global Tools for Flood and Drought Prediction
+author: The Copernicus Emergency Managment Service (CEMS), entrusted to ECMWF (European Centre for Medium-Range Weather Forecasts)
+logo : 
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -17,23 +18,17 @@ latex:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/Simow-az/2025-wmo-workshop-training-glofas-seasonal-V1  # Online location of your book
-  branch: develop  # Which branch of the repository should be used when creating links (optional)
+  url: https://github.com/ecmwf/cems-floods-notebooks  # Online location of your book
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   use_issues_button: true
   use_repository_button: true
-  extra_css: ["_static/custom.css"]
   
 launch_buttons:
-  notebook_interface: "jupyterlab"  # or "classic"
   binderhub_url: "https://mybinder.org"  # The URL for your BinderHub (e.g., https://mybinder.org)
-  colab_url: "https://colab.research.google.com"  # The URL for Google Colab (e.g., https://colab.research.google.com)
-  # kaggle_url: "https://www.kaggle.com/kernels/new"  # The URL for Kaggle (e.g., https://www.kaggle.com/kernels/new)
-  deepnote_url: "https://deepnote.com"  # The URL for Deepnote (e.g., https://deepnote.com)
-  jupyterhub_url: "https://jupyterhub5-test.ecmwf.int"
 
 exclude_patterns:
   - developer/*
